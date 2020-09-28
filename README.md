@@ -8,4 +8,4 @@ Feel free to add a pull request or an issue. I might learn something from it bec
 
 **Every asset of this game is non copyright and free to use. I thank everyone who published these assets for free.**
 
-**You need Java JDK to play this game! Here: https://www.oracle.com/de/java/technologies/javase-downloads.html **
+**You need Java JDK to play this game! Here: https://www.oracle.com/de/java/technologies/javase-downloads.html**
