@@ -6,7 +6,7 @@ You can't play this game for long because it isn't much fun. I watched tutorials
 
 
 This game is just a simple space game with a rocket which can shoot, collectables, asteroids, a fitting soundtrack, upgrades, menu,... . 
-The game will be faster and faster after some time to increase the difficulty.
+The game will gain speed after some time to increase the difficulty.
 Use ESC if you start the game to pause and to look into every menu. 
 Yes the windows should be so small.
 And yes this game may be buggy or not good optimized or has weird hitboxes,... but yeah, I learned much from this game.
