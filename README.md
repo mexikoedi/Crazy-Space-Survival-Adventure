@@ -19,4 +19,4 @@ Feel free to add a pull request or an issue. I might learn something from it bec
 
 **You need Java JDK to play this game! Here: https://www.oracle.com/de/java/technologies/javase-downloads.html**
 
-Thanks [Slifer808](https://steamcommunity.com/profiles/76561198347469960) for the help with the assets.
+Thanks to [Slifer808](https://steamcommunity.com/profiles/76561198347469960) for the help with the assets.
