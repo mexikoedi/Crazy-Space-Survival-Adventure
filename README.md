@@ -5,7 +5,7 @@ Many things (or everything) is in german and this game is only a Java learning g
 You can't play this game for long because it isn't much fun. I watched tutorials to make this game happen, added many things myself and fixed bugs. 
 
 
-This game is just a simple space game with a rocket which can shoot, asteroids, collectables, a fitting soundtrack, upgrades, menu,... . 
+This game is just a simple space game with a rocket which can shoot, collectables, asteroids, a fitting soundtrack, upgrades, menu,... . 
 The game will be faster and faster after some time to increase the difficulty.
 Use ESC if you start the game to pause and to look into every menu. 
 Yes the windows should be so small.
