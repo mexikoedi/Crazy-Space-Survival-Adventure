@@ -1,4 +1,4 @@
-# Crazy-Space-Survival-Adventure
+# Crazy Space Survival Adventure
 
 This is a simple Java space game which I programmed to learn Java. 
 Many things (or everything) is in german and this game is only a Java learning game. 
