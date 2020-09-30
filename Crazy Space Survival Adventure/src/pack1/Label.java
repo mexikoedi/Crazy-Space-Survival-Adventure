@@ -48,11 +48,11 @@ public class Label extends JLabel {
 			g.drawImage(Var.ischrott3, Var.schrottx3, Var.schrotty3, 88, 78, null);
 
 			for (int i = 0; i <= 4; i++) {
-				g.drawImage(Var.igegner1, Var.gegnerx[i], Var.gegnery[i], 100, 100, null);
+				g.drawImage(Var.igegner1, Var.gegnerx[i], Var.gegnery[i], 60, 60, null);
 			}
 
 			if (Var.schusskollision == true) {
-				g.drawImage(Var.gifgegner, Var.posgegnerx, Var.posgegnery, 100, 100, null);
+				g.drawImage(Var.gifgegner, Var.posgegnerx, Var.posgegnery, 60, 60, null);
 			}
 
 			if (Var.bolschuss == true) {
@@ -90,13 +90,13 @@ public class Label extends JLabel {
 			}
 			repaint();
 
-		} else if (Var.imMenü || Var.imSteuerung || Var.imShop || Var.imInfo) {
+		} else if (Var.imMenÃ¼ || Var.imSteuerung || Var.imShop || Var.imInfo) {
 
 			g.drawImage(Var.ib1, 0, Var.backgroundY1, 800, 600, null);
 			g.drawImage(Var.ib2, 0, Var.backgroundY2, 800, 600, null);
 
 			if (Var.schusskollision == false) {
-				g.drawImage(Var.gifgegner, Var.posgegnerx, Var.posgegnery, 100, 100, null);
+				g.drawImage(Var.gifgegner, Var.posgegnerx, Var.posgegnery, 60, 60, null);
 			}
 
 			if (Var.bolschuss == false) {
@@ -119,7 +119,7 @@ public class Label extends JLabel {
 			}
 
 			for (int i = 0; i <= 4; i++) {
-				g.drawImage(Var.igegner1, Var.gegnerx[i], Var.gegnery[i], 100, 100, null);
+				g.drawImage(Var.igegner1, Var.gegnerx[i], Var.gegnery[i], 60, 60, null);
 			}
 
 			g.setColor(new Color(100, 100, 100, 128));
@@ -169,8 +169,8 @@ public class Label extends JLabel {
 
 				g.drawString("Hoch, runter, rechts und links mit den Pfeil ", 10, 180);
 				g.drawString("Tasten.", 10, 230);
-				g.drawString("Schießen mit der Leertaste.", 10, 310);
-				g.drawString("Benutze ESC für das Menü und navigiere dich", 10, 390);
+				g.drawString("SchieÃŸen mit der Leertaste.", 10, 310);
+				g.drawString("Benutze ESC fÃ¼r das MenÃ¼ und navigiere dich", 10, 390);
 				g.drawString("mit der Maus darin.", 10, 440);
 
 				repaint();
@@ -180,15 +180,15 @@ public class Label extends JLabel {
 				g.setColor(new Color(0, 230, 115));
 				g.setFont(new Font("Arial", Font.BOLD, 35));
 
-				g.drawString("Versuche solange zu überleben wie du nur", 10, 180);
+				g.drawString("Versuche solange zu Ã¼berleben wie du nur", 10, 180);
 				g.drawString("kannst.", 10, 230);
 				g.drawString("Vermeide die Asteroiden.", 10, 310);
 				g.drawString("Sammel Schrott ein und nutze Upgrades um", 10, 390);
-				g.drawString("länger zu überleben.", 10, 440);
+				g.drawString("lÃ¤nger zu Ã¼berleben.", 10, 440);
 
 				g.setColor(new Color(0, 1, 1));
 				g.setFont(new Font("Arial", Font.BOLD, 20));
-				g.drawString("© 2020 mexikoedi", 10, 520);
+				g.drawString("Â© 2020 mexikoedi", 10, 520);
 				g.drawString("All rights reserved.", 10, 550);
 
 				repaint();
