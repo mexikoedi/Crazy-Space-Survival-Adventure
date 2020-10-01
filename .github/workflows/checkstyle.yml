@@ -1,2 +1,2 @@
-- name: Run java checkstyle
+  name: Run java checkstyle
   uses: nikitasavinov/checkstyle-action@0.3.1
