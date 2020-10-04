@@ -11,7 +11,7 @@ Use ESC if you start the game to pause and to look into every menu.
 Yes the window should be so small.
 And yes this game may be buggy or not good optimized or has weird hitboxes,... but yeah, I learned much from this game.
 
-
+You can donwload it if you select the green button named "Code" then "Download Zip". Extract the downloaded zip folder and then open the game by opening the .jar file.
 
 Feel free to add a pull request or an issue. I might learn something from it because I'm still not a profi with java.
 
