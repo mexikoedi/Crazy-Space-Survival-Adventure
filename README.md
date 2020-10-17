@@ -23,3 +23,6 @@ Feel free to add a pull request or an issue. I might learn something from it bec
 **You need Java JDK 14 or higher to play this game! Here: https://www.oracle.com/de/java/technologies/javase-downloads.html**
 
 Thanks to [Slifer808](https://steamcommunity.com/profiles/76561198347469960) for the help with the assets.
+
+© 2020 mexikoedi
+All rights reserved.
