@@ -24,4 +24,6 @@ Feel free to add a pull request or an issue. I might learn something from it bec
 
 Thanks to [Slifer808](https://steamcommunity.com/profiles/76561198347469960) for the help with the assets.
 
-© 2020 mexikoedi. All rights reserved.
+© 2020 mexikoedi 
+
+All rights reserved.
