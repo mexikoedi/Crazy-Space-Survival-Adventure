@@ -180,11 +180,11 @@ public class Label extends JLabel {
 				g.setColor(new Color(0, 230, 115));
 				g.setFont(new Font("Arial", Font.BOLD, 35));
 
-				g.drawString("Versuche solange zu überleben wie du nur", 10, 180);
+				g.drawString("Versuche solange zu Überleben wie du nur", 10, 180);
 				g.drawString("kannst.", 10, 230);
 				g.drawString("Vermeide die Asteroiden.", 10, 310);
 				g.drawString("Sammel Schrott ein und nutze Upgrades um", 10, 390);
-				g.drawString("länger zu überleben.", 10, 440);
+				g.drawString("länger zu Überleben.", 10, 440);
 
 				g.setColor(new Color(0, 1, 1));
 				g.setFont(new Font("Arial", Font.BOLD, 20));
