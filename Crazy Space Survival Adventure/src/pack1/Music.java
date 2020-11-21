@@ -27,9 +27,10 @@ public class Music {
 						clip.loop(Clip.LOOP_CONTINUOUSLY);
 						FloatControl volume = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
 						volume.setValue(-10);
-
+						
 						Thread.sleep(clip.getMicrosecondLength() / 1000);
-
+						clip.stop(); 
+						clip.close();
 					} catch (Exception e) {
 						e.printStackTrace();
 						System.out.println("Audio konnte nicht geladen werden");
