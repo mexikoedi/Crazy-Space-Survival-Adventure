@@ -18,8 +18,8 @@ public class GegnerKollision {
 
 					for (int i = 0; i <= 4; i++) {
 						if (temp == 0) {
-							if (Var.x >= Var.gegnerx[i] - 50 && Var.x <= Var.gegnerx[i] + 73
-									&& Var.y >= Var.gegnery[i] - 70 && Var.y <= Var.gegnery[i] + 35) {
+							if (Var.x >= Var.gegnerx[i] - 30 && Var.x <= Var.gegnerx[i] + 40
+									&& Var.y >= Var.gegnery[i] - 30 && Var.y <= Var.gegnery[i] + 20) {
 
 								Var.kollidiert = true;
 								Var.gegnery[i] = -150;
