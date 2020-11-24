@@ -9,7 +9,7 @@ This game is just a simple space game with a rocket which can shoot, collectable
 The game will gain speed after some time to increase the difficulty.
 Use ESC if you start the game to pause and to look into every menu. 
 Yes the window should be so small.
-And yes this game may be buggy or not good optimized or has weird hitboxes,... but yeah, I learned much from this game.
+And yes this game may be buggy or not good optimized,... but yeah, I learned much from this game.
 
 
 You can donwload it if you select the green button named "Code" then "Download ZIP". Extract the downloaded zip folder and then open the game by opening the .jar file.
