@@ -12,7 +12,7 @@ Yes the window should be so small.
 And yes this game may be buggy or not good optimized,... but yeah, i learned much from this game.
 
 
-You can donwload it if you select the green button named "Code" then "Download ZIP". Extract the downloaded zip folder and then open the game by opening the .jar file.
+You can donwload it if you select the green button named "Code" then "Download ZIP" or donwload the ZIP file over the releases tab. Extract the downloaded zip folder and then open the game by opening the .jar file.
 
 
 Feel free to add a pull request or an issue. I might learn something from it because i'm still not a pro with java.
