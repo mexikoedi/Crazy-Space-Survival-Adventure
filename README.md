@@ -16,7 +16,7 @@ And yes this game may be buggy or not good optimized,... but yeah, I learned muc
 You can donwload it if you select the green button named "Code" then "Download ZIP" or donwload the ZIP file over the releases tab. Extract the downloaded zip folder and then open the game by opening the .jar file.
 
 
-Feel free to add a pull request or an issue. I might learn something from it because I am still not a pro with Java.
+Feel free to add a pull request or an issue. I might learn something from it because I am still learning.  
 
 
 **Every asset of this game is non copyright and free to use. I thank everyone who published these assets for free.**
