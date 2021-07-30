@@ -1,20 +1,14 @@
 name: Checkstyle
-
-on: [push]
+on: push
 
 jobs:
-  java-checkstyle:
+  checkstyle_job:
     runs-on: ubuntu-latest
+    name: Checkstyle job
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v2
-      - name: Run Java Checkstyle
-        uses: Justintime50/java-checkstyle-action@v1
-        with:
-          # The directory to run Checkstyle recursively on.
-          # Default is the root of your project.
-          directory: ./
-
-          # The name of the style suite to be used, either 'sun' or 'google'.
-          # Default is shown.
-          style_suite: google
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Run check style
+      uses: nikitasavinov/checkstyle-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
