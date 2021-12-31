@@ -188,7 +188,7 @@ public class Label extends JLabel {
 
 				g.setColor(new Color(0, 1, 1));
 				g.setFont(new Font("Arial", Font.BOLD, 20));
-				g.drawString("© 2020-2021 mexikoedi", 10, 520);
+				g.drawString("© 2020-2022 mexikoedi", 10, 520);
 				g.drawString("All rights reserved.", 10, 550);
 
 				repaint();
