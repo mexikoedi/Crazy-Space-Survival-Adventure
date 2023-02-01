@@ -5,11 +5,13 @@ import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
-
+import java.time.LocalDate;
 import javax.swing.JLabel;
 
 public class Label extends JLabel {
-
+	
+	private LocalDate currentDate = LocalDate.now();
+	private int currentYear = currentDate.getYear();
 	private static final long serialVersionUID = 1L;
 
 	protected void paintComponent(Graphics g) {
@@ -188,7 +190,7 @@ public class Label extends JLabel {
 
 				g.setColor(new Color(0, 1, 1));
 				g.setFont(new Font("Arial", Font.BOLD, 20));
-				g.drawString("© 2020-2022 mexikoedi", 10, 520);
+				g.drawString("© 2020-" + currentYear + " mexikoedi", 10, 520);
 				g.drawString("All rights reserved.", 10, 550);
 
 				repaint();
