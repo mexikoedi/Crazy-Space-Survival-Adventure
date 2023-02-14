@@ -21,7 +21,7 @@ Feel free to add a pull request or an issue. I might learn something from it bec
 
 **Every asset of this game is non copyright and free to use. I thank everyone who published these assets for free.**
 
-**You need Java JDK 14 or higher to play this game! Here: https://www.oracle.com/de/java/technologies/javase-downloads.html**
+**You need Java to play this game! Here: https://www.java.com/en/download**
 
 Thanks to [Slifer808](https://steamcommunity.com/profiles/76561198347469960) for the help with the assets.
 
