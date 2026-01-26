@@ -4,33 +4,32 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class Aktualisierung {
-	Timer aktual;
-	static int tempAktualisierung = 0;
+  Timer aktual;
+  static int tempAktualisierung = 0;
 
-	public Aktualisierung() {
-		aktual = new Timer();
-		aktual.scheduleAtFixedRate(new TimerTask() {
+  public Aktualisierung() {
+    aktual = new Timer();
+    aktual.scheduleAtFixedRate(
+        new TimerTask() {
 
-			@Override
-			public void run() {
+          @Override
+          public void run() {
 
-				if (Var.imMenü) {
-					if (tempAktualisierung == 0) {
-						Var.btnresume.requestFocus();
-						Var.btnsteuerung.requestFocus();
-						Var.btnshop.requestFocus();
-						Var.btnexit.requestFocus();
-						Var.btninfo.requestFocus();
-						tempAktualisierung++;
-					} else if (tempAktualisierung == 1) {
-						Var.jf1.requestFocus();
-					}
-
-				}
-
-			}
-
-		}, 0, 50);
-	}
-
+            if (Var.imMenue) {
+              if (tempAktualisierung == 0) {
+                Var.btnresume.requestFocus();
+                Var.btnsteuerung.requestFocus();
+                Var.btnshop.requestFocus();
+                Var.btnexit.requestFocus();
+                Var.btninfo.requestFocus();
+                tempAktualisierung++;
+              } else if (tempAktualisierung == 1) {
+                Var.jf1.requestFocus();
+              }
+            }
+          }
+        },
+        0,
+        50);
+  }
 }
