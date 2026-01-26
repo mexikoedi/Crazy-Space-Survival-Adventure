@@ -20,10 +20,24 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: 21
-      - uses: axel-op/googlejavaformat-action@v4
+
+      - name: Download Google Java Format
+        run: |
+          curl -L -o google-java-format.jar \
+            https://github.com/google/google-java-format/releases/download/v1.33.0/google-java-format-1.33.0-all-deps.jar
+
+      - name: Format each Java file individually
+        run: |
+          shopt -s globstar
+          for f in **/*.java; do
+            if [[ "$f" == *module-info.java ]]; then
+              continue
+            fi
+            echo "Formatting $f"
+            java -jar google-java-format.jar --replace "$f"
+          done
+
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v7.1.0
         with:
-          args: "--replace" 
-          files: "**/*.java" 
-          files-excluded: "**/module-info.java" 
-          batch-size: 1
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          commit_message: "Apply Google Java Format"
