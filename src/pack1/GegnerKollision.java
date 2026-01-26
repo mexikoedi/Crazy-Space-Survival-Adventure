@@ -4,54 +4,57 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 public class GegnerKollision {
-	Timer kollision;
-	private int temp = 0;
+  Timer kollision;
+  private int temp = 0;
 
-	public GegnerKollision() {
-		kollision = new Timer();
-		kollision.scheduleAtFixedRate(new TimerTask() {
+  public GegnerKollision() {
+    kollision = new Timer();
+    kollision.scheduleAtFixedRate(
+        new TimerTask() {
 
-			@Override
-			public void run() {
+          @Override
+          public void run() {
 
-				if (Var.imSpiel) {
+            if (Var.imSpiel) {
 
-					for (int i = 0; i <= 4; i++) {
-						if (temp == 0) {
-							if (Var.x >= Var.gegnerx[i] - 30 && Var.x <= Var.gegnerx[i] + 40
-									&& Var.y >= Var.gegnery[i] - 30 && Var.y <= Var.gegnery[i] + 20) {
+              for (int i = 0; i <= 4; i++) {
+                if (temp == 0) {
+                  if (Var.x >= Var.gegnerx[i] - 30
+                      && Var.x <= Var.gegnerx[i] + 40
+                      && Var.y >= Var.gegnery[i] - 30
+                      && Var.y <= Var.gegnery[i] + 20) {
 
-								Var.kollidiert = true;
-								Var.gegnery[i] = -150;
+                    Var.kollidiert = true;
+                    Var.gegnery[i] = -150;
 
-								if (Var.schildanzahl > 0) {
-									Var.schildanzahl -= 1;
-								} else if (Var.schildanzahl == 0) {
-									if (Var.leben >= 1) {
-										Var.leben -= 1;
-									}
-									if (Var.leben == 0) {
-										Var.verloren = true;
+                    if (Var.schildanzahl > 0) {
+                      Var.schildanzahl -= 1;
+                    } else if (Var.schildanzahl == 0) {
+                      if (Var.leben >= 1) {
+                        Var.leben -= 1;
+                      }
+                      if (Var.leben == 0) {
+                        Var.verloren = true;
 
-									} else if (Var.leben > 0) {
-										Var.verloren = false;
-									}
-								}
+                      } else if (Var.leben > 0) {
+                        Var.verloren = false;
+                      }
+                    }
 
-								temp++;
-							}
-						}
-					}
+                    temp++;
+                  }
+                }
+              }
 
-					if (temp >= 1 && temp <= 65) {
-						temp++;
-					} else if (temp == 66) {
-						temp = 0;
-					}
-				}
-			}
-
-		}, 0, 15);
-	}
-
+              if (temp >= 1 && temp <= 65) {
+                temp++;
+              } else if (temp == 66) {
+                temp = 0;
+              }
+            }
+          }
+        },
+        0,
+        15);
+  }
 }
