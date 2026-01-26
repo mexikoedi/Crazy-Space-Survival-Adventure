@@ -10,12 +10,9 @@ public class PlayerMovement {
     movement = new Timer();
     movement.scheduleAtFixedRate(
         new TimerTask() {
-
           @Override
           public void run() {
-
             if (Var.imSpiel) {
-
               if (Var.moveup == true) {
                 if (Var.y >= 0) {
                   Var.y -= Var.speedup;

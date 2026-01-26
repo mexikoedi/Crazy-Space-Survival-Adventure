@@ -10,12 +10,9 @@ public class Background {
     back = new Timer();
     back.scheduleAtFixedRate(
         new TimerTask() {
-
           @Override
           public void run() {
-
             if (Var.imSpiel) {
-
               if (Var.backgroundY1 < 596) {
                 Var.backgroundY1 += 2;
               } else {

@@ -10,7 +10,6 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class Var {
-
   static JFrame jf1;
   static int screenwidth = 800, screenheight = 600;
   static int backgroundY1 = 0, backgroundY2 = -600, backgroundspeed = 9;
@@ -26,7 +25,6 @@ public class Var {
   static JButton btnmute;
   static JButton btnupgrade1, btnupgrade2, btnupgrade3, btnleben;
   static Label lbl1;
-
   static int gegnerx[] = new int[5], gegnery[] = new int[5];
   static int gegnerspeed[] = new int[5];
   static int schrottx1[] = new int[5], schrotty1[] = new int[5];
@@ -45,7 +43,6 @@ public class Var {
       imInfo = false;
   static boolean bolschuss = false;
   static boolean schusskollision = false;
-
   static BufferedImage ib1, ib2;
   static BufferedImage irakete, iflamme1, iflamme2;
   static BufferedImage igegner1;
@@ -53,13 +50,11 @@ public class Var {
   static BufferedImage iLeben;
   static BufferedImage ischild[] = new BufferedImage[4];
   static BufferedImage iammo;
-
   static Image gifexplosion;
   static Image gifschuss;
   static Image gifgegner;
 
   public Var() {
-
     try {
       // Icon
       Image icon = Toolkit.getDefaultToolkit().getImage("rsc/icon.png");
@@ -83,17 +78,17 @@ public class Var {
       ischrott3 = ImageIO.read(new File("rsc/schrott3.png"));
       // Explosion
       gifexplosion = Toolkit.getDefaultToolkit().createImage("rsc/explosion.gif");
+
       // Schild
       for (int i = 0; i < ischild.length; i++) {
         ischild[i] = ImageIO.read(new File("rsc/schild" + (i + 1) + ".png"));
       }
+
       // Schuss
       gifschuss = Toolkit.getDefaultToolkit().createImage("rsc/schuss.gif");
       // Munition
       iammo = ImageIO.read(new File("rsc/ammo.png"));
-
     } catch (IOException e) {
-
       e.printStackTrace();
       System.out.println("Bilder konnten nicht geladen werden");
     }
@@ -103,18 +98,14 @@ public class Var {
     gegnerspeed[2] = 3;
     gegnerspeed[3] = 4;
     gegnerspeed[4] = 3;
-
     schrottspeed1[0] = 2;
     schrottspeed1[1] = 3;
     schrottspeed1[2] = 2;
     schrottspeed1[3] = 4;
     schrottspeed1[4] = 3;
-
     schrottspeed2[0] = 4;
     schrottspeed2[1] = 5;
-
     schrottspeed3 = 6;
-
     Music.music("audio/track1.wav");
   }
 }

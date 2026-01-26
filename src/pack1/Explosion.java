@@ -11,15 +11,11 @@ public class Explosion {
     exp = new Timer();
     exp.scheduleAtFixedRate(
         new TimerTask() {
-
           @Override
           public void run() {
-
             if (Var.imSpiel) {
-
               if (Var.kollidiert) {
                 if (temp < 10) {
-
                   temp++;
                 } else if (temp == 10) {
                   Var.gifexplosion.flush();

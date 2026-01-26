@@ -11,19 +11,15 @@ public class GegnerKollision {
     kollision = new Timer();
     kollision.scheduleAtFixedRate(
         new TimerTask() {
-
           @Override
           public void run() {
-
             if (Var.imSpiel) {
-
               for (int i = 0; i <= 4; i++) {
                 if (temp == 0) {
                   if (Var.x >= Var.gegnerx[i] - 30
                       && Var.x <= Var.gegnerx[i] + 40
                       && Var.y >= Var.gegnery[i] - 30
                       && Var.y <= Var.gegnery[i] + 20) {
-
                     Var.kollidiert = true;
                     Var.gegnery[i] = -150;
 
@@ -33,9 +29,9 @@ public class GegnerKollision {
                       if (Var.leben >= 1) {
                         Var.leben -= 1;
                       }
+
                       if (Var.leben == 0) {
                         Var.verloren = true;
-
                       } else if (Var.leben > 0) {
                         Var.verloren = false;
                       }

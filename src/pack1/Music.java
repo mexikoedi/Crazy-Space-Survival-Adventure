@@ -9,18 +9,14 @@ import javax.sound.sampled.FloatControl;
 public class Music {
 
   public static synchronized void music(String track) {
-
     final String trackname = track;
 
     new Thread(
             new Runnable() {
-
               @Override
               public void run() {
                 while (true) {
-
                   try {
-
                     Clip clip = AudioSystem.getClip();
                     AudioInputStream inputstream =
                         AudioSystem.getAudioInputStream(new File(trackname));
@@ -32,7 +28,6 @@ public class Music {
                     Thread.sleep(clip.getMicrosecondLength() / 1000);
                     clip.stop();
                     clip.close();
-
                   } catch (Exception e) {
                     e.printStackTrace();
                     System.out.println("Audio konnte nicht geladen werden");

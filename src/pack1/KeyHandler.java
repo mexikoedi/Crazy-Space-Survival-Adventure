@@ -4,7 +4,6 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 public class KeyHandler implements KeyListener {
-
   static int tempKeyhandler = 0;
 
   @Override
@@ -67,12 +66,10 @@ public class KeyHandler implements KeyListener {
         Var.btnsteuerung.setVisible(false);
         Var.btnexit.setVisible(false);
         Var.btninfo.setVisible(false);
-
         Var.btnupgrade1.setVisible(false);
         Var.btnupgrade2.setVisible(false);
         Var.btnupgrade3.setVisible(false);
         Var.btnleben.setVisible(false);
-
         tempKeyhandler--;
         Aktualisierung.tempAktualisierung = 0;
       }

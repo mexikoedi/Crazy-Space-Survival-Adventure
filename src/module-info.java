@@ -1,3 +1,3 @@
 module spaceAdventure {
-	requires java.desktop;
+  requires java.desktop;
 }

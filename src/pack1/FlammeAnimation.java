@@ -11,12 +11,9 @@ public class FlammeAnimation {
     flamme = new Timer();
     flamme.scheduleAtFixedRate(
         new TimerTask() {
-
           @Override
           public void run() {
-
             if (Var.imSpiel) {
-
               if (temp == 0) {
                 Var.flammeanimation = 0;
                 temp++;

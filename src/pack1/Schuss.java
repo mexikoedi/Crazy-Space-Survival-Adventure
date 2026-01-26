@@ -11,10 +11,8 @@ public class Schuss {
     schusstimer = new Timer();
     schusstimer.scheduleAtFixedRate(
         new TimerTask() {
-
           @Override
           public void run() {
-
             if (Var.bolschuss == true) {
               Var.schussy -= 3;
             }
@@ -24,23 +22,18 @@ public class Schuss {
                   && Var.schussx <= Var.gegnerx[i] + 73
                   && Var.schussy >= Var.gegnery[i] - 70
                   && Var.schussy <= Var.gegnery[i] + 35) {
-
                 Var.schusskollision = true;
                 Var.bolschuss = false;
-
                 Var.schussx = Var.screenwidth + 100;
                 Var.schussy = Var.screenheight + 100;
-
                 Var.posgegnerx = Var.gegnerx[i] - 10;
                 Var.posgegnery = Var.gegnery[i] - 10;
-
                 Var.gegnery[i] = -150;
               }
             }
 
             if (Var.schussy <= 0) {
               Var.bolschuss = false;
-
               Var.schussx = Var.screenwidth + 100;
               Var.schussy = Var.screenheight + 100;
             }
@@ -50,7 +43,6 @@ public class Schuss {
                 temp++;
               } else if (temp == 37) {
                 Var.schusskollision = false;
-
                 Var.gifgegner.flush();
                 temp = 0;
               }

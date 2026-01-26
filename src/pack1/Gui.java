@@ -8,9 +8,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 
 public class Gui {
-
   public Gui() {
-
     Var.jf1 = new JFrame();
     Var.jf1.setSize(Var.screenwidth, Var.screenheight);
     Var.jf1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -20,11 +18,9 @@ public class Gui {
     Var.jf1.setResizable(false);
     Var.jf1.addKeyListener(new KeyHandler());
     Var.jf1.requestFocus();
-
     Var.lbl1 = new Label();
     Var.lbl1.setBounds(0, 0, Var.screenwidth, Var.screenheight);
     Var.lbl1.setVisible(true);
-
     Var.btnresume = new JButton();
     Var.btnresume.setText("Resume");
     Var.btnresume.setBounds(30, 50, 725, 50);
@@ -37,7 +33,6 @@ public class Gui {
     Var.btnresume.setFocusPainted(false);
     Var.btnresume.addMouseListener(
         new MouseAdapter() {
-
           public void mouseEntered(MouseEvent evt) {
             Var.btnresume.setBackground(new Color(0, 230, 115));
             Var.btnresume.setForeground(Color.BLACK);
@@ -48,8 +43,8 @@ public class Gui {
             Var.btnresume.setForeground(Color.WHITE);
           }
         });
-    Var.jf1.add(Var.btnresume);
 
+    Var.jf1.add(Var.btnresume);
     Var.btnshop = new JButton();
     Var.btnshop.setText("Upgrades");
     Var.btnshop.setBounds(30, 150, 725, 50);
@@ -62,7 +57,6 @@ public class Gui {
     Var.btnshop.setFocusPainted(false);
     Var.btnshop.addMouseListener(
         new MouseAdapter() {
-
           public void mouseEntered(MouseEvent evt) {
             Var.btnshop.setBackground(new Color(0, 230, 115));
             Var.btnshop.setForeground(Color.BLACK);
@@ -73,8 +67,8 @@ public class Gui {
             Var.btnshop.setForeground(Color.WHITE);
           }
         });
-    Var.jf1.add(Var.btnshop);
 
+    Var.jf1.add(Var.btnshop);
     Var.btninfo = new JButton();
     Var.btninfo.setText("Info");
     Var.btninfo.setBounds(30, 250, 725, 50);
@@ -87,7 +81,6 @@ public class Gui {
     Var.btninfo.setFocusPainted(false);
     Var.btninfo.addMouseListener(
         new MouseAdapter() {
-
           public void mouseEntered(MouseEvent evt) {
             Var.btninfo.setBackground(new Color(0, 230, 115));
             Var.btninfo.setForeground(Color.BLACK);
@@ -98,8 +91,8 @@ public class Gui {
             Var.btninfo.setForeground(Color.WHITE);
           }
         });
-    Var.jf1.add(Var.btninfo);
 
+    Var.jf1.add(Var.btninfo);
     Var.btnsteuerung = new JButton();
     Var.btnsteuerung.setText("Steuerung");
     Var.btnsteuerung.setBounds(30, 350, 725, 50);
@@ -112,7 +105,6 @@ public class Gui {
     Var.btnsteuerung.setFocusPainted(false);
     Var.btnsteuerung.addMouseListener(
         new MouseAdapter() {
-
           public void mouseEntered(MouseEvent evt) {
             Var.btnsteuerung.setBackground(new Color(0, 230, 115));
             Var.btnsteuerung.setForeground(Color.BLACK);
@@ -123,8 +115,8 @@ public class Gui {
             Var.btnsteuerung.setForeground(Color.WHITE);
           }
         });
-    Var.jf1.add(Var.btnsteuerung);
 
+    Var.jf1.add(Var.btnsteuerung);
     Var.btnexit = new JButton();
     Var.btnexit.setText("Beenden");
     Var.btnexit.setBounds(30, 450, 725, 50);
@@ -137,7 +129,6 @@ public class Gui {
     Var.btnexit.setFocusPainted(false);
     Var.btnexit.addMouseListener(
         new MouseAdapter() {
-
           public void mouseEntered(MouseEvent evt) {
             Var.btnexit.setBackground(new Color(0, 230, 115));
             Var.btnexit.setForeground(Color.BLACK);
@@ -148,10 +139,9 @@ public class Gui {
             Var.btnexit.setForeground(Color.WHITE);
           }
         });
+
     Var.jf1.add(Var.btnexit);
-
     // Upgrades
-
     Var.btnupgrade1 = new JButton();
     Var.btnupgrade1.setText("+");
     Var.btnupgrade1.setBounds(450, 300, 50, 50);
@@ -164,10 +154,10 @@ public class Gui {
     Var.btnupgrade1.setFocusPainted(false);
     Var.btnupgrade1.addMouseListener(
         new MouseAdapter() {
-
           public void mouseEntered(MouseEvent evt) {
             Var.btnupgrade1.setBackground(new Color(0, 230, 115));
             Var.btnupgrade1.setForeground(Color.BLACK);
+
             if (Var.schrott < Var.up1preis) {
               Var.btnupgrade1.setText("x");
             }
@@ -181,11 +171,8 @@ public class Gui {
         });
 
     Var.jf1.add(Var.btnupgrade1);
-
     Var.jf1.add(Var.btnexit);
-
     // Upgrades
-
     Var.btnupgrade2 = new JButton();
     Var.btnupgrade2.setText("+");
     Var.btnupgrade2.setBounds(450, 375, 50, 50);
@@ -198,13 +185,14 @@ public class Gui {
     Var.btnupgrade2.setFocusPainted(false);
     Var.btnupgrade2.addMouseListener(
         new MouseAdapter() {
-
           public void mouseEntered(MouseEvent evt) {
             Var.btnupgrade2.setBackground(new Color(0, 230, 115));
             Var.btnupgrade2.setForeground(Color.BLACK);
+
             if (Var.schrott < Var.up2preis) {
               Var.btnupgrade2.setText("x");
             }
+
             if (Var.ammo > 0) {
               Var.btnupgrade2.setText("x");
             }
@@ -218,11 +206,8 @@ public class Gui {
         });
 
     Var.jf1.add(Var.btnupgrade2);
-
     Var.jf1.add(Var.btnexit);
-
     // Upgrades
-
     Var.btnupgrade3 = new JButton();
     Var.btnupgrade3.setText("+");
     Var.btnupgrade3.setBounds(450, 450, 50, 50);
@@ -235,10 +220,10 @@ public class Gui {
     Var.btnupgrade3.setFocusPainted(false);
     Var.btnupgrade3.addMouseListener(
         new MouseAdapter() {
-
           public void mouseEntered(MouseEvent evt) {
             Var.btnupgrade3.setBackground(new Color(0, 230, 115));
             Var.btnupgrade3.setForeground(Color.BLACK);
+
             if (Var.schrott < Var.up3preis) {
               Var.btnupgrade3.setText("x");
             }
@@ -252,7 +237,6 @@ public class Gui {
         });
 
     Var.jf1.add(Var.btnupgrade3);
-
     Var.btnleben = new JButton();
     Var.btnleben.setText("+");
     Var.btnleben.setBounds(700, 200, 50, 50);
@@ -265,10 +249,10 @@ public class Gui {
     Var.btnleben.setFocusPainted(false);
     Var.btnleben.addMouseListener(
         new MouseAdapter() {
-
           public void mouseEntered(MouseEvent evt) {
             Var.btnleben.setBackground(new Color(0, 230, 115));
             Var.btnleben.setForeground(Color.BLACK);
+
             if (Var.schrott < Var.uplebenpreis || Var.leben == Var.maxleben) {
               Var.btnleben.setText("x");
             }

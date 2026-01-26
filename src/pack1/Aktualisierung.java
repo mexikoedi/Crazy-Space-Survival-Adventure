@@ -11,10 +11,8 @@ public class Aktualisierung {
     aktual = new Timer();
     aktual.scheduleAtFixedRate(
         new TimerTask() {
-
           @Override
           public void run() {
-
             if (Var.imMenue) {
               if (tempAktualisierung == 0) {
                 Var.btnresume.requestFocus();
