@@ -22,6 +22,8 @@ jobs:
           java-version: 21
       - uses: axel-op/googlejavaformat-action@v4
         with:
-          args: "--replace"
-          files-excluded: "module-info.java"
+          args: "--replace" 
+          files: | 
+            **/*.java 
+            !**/module-info.java
           github-token: ${{ secrets.GITHUB_TOKEN }}
