@@ -2,7 +2,7 @@ name: Google Java Format
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   formatting:
