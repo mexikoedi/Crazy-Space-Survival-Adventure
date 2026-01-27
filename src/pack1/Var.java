@@ -60,7 +60,7 @@ public class Var {
       // Icon
       Image icon = Toolkit.getDefaultToolkit().getImage(cl.getResource("icon.png"));
       jf1.setIconImage(icon);
-      // Background (use classpath resources instead of File paths)
+      // Background
       ib1 = ImageIO.read(cl.getResourceAsStream("b1.png"));
       ib2 = ImageIO.read(cl.getResourceAsStream("b1.png"));
       // Rakete
