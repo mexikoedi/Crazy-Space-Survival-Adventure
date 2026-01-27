@@ -1,15 +1,14 @@
 package pack1;
 
-import java.io.File;
+import java.net.URL;
 import javax.sound.sampled.AudioInputStream;
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
 import javax.sound.sampled.FloatControl;
 
 public class Music {
-
-  public static synchronized void music(String track) {
-    final String trackname = track;
+  public static synchronized void music(URL trackUrl) {
+    final URL url = trackUrl;
 
     new Thread(
             new Runnable() {
@@ -18,8 +17,7 @@ public class Music {
                 while (true) {
                   try {
                     Clip clip = AudioSystem.getClip();
-                    AudioInputStream inputstream =
-                        AudioSystem.getAudioInputStream(new File(trackname));
+                    AudioInputStream inputstream = AudioSystem.getAudioInputStream(url);
                     clip.open(inputstream);
                     clip.loop(Clip.LOOP_CONTINUOUSLY);
                     FloatControl volume =

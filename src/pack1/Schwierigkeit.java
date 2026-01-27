@@ -1,7 +1,6 @@
 package pack1;
 
 public class Schwierigkeit {
-
   public Schwierigkeit() {
     if (Var.imSpiel = true) {
       new java.util.Timer()

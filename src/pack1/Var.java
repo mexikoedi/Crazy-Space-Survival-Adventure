@@ -3,7 +3,6 @@ package pack1;
 import java.awt.Image;
 import java.awt.Toolkit;
 import java.awt.image.BufferedImage;
-import java.io.File;
 import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JButton;
@@ -55,39 +54,41 @@ public class Var {
   static Image gifgegner;
 
   public Var() {
+    ClassLoader cl = this.getClass().getClassLoader();
+
     try {
       // Icon
-      Image icon = Toolkit.getDefaultToolkit().getImage("rsc/icon.png");
+      Image icon = Toolkit.getDefaultToolkit().getImage(cl.getResource("icon.png"));
       jf1.setIconImage(icon);
-      // Background
-      ib1 = ImageIO.read(new File("rsc/b1.png"));
-      ib2 = ImageIO.read(new File("rsc/b1.png"));
+      // Background (use classpath resources instead of File paths)
+      ib1 = ImageIO.read(cl.getResourceAsStream("b1.png"));
+      ib2 = ImageIO.read(cl.getResourceAsStream("b1.png"));
       // Rakete
-      irakete = ImageIO.read(new File("rsc/rakete.png"));
+      irakete = ImageIO.read(cl.getResourceAsStream("rakete.png"));
       // Flamme
-      iflamme1 = ImageIO.read(new File("rsc/flamme 1.1.png"));
-      iflamme2 = ImageIO.read(new File("rsc/flamme 1.2.png"));
+      iflamme1 = ImageIO.read(cl.getResourceAsStream("flamme 1.1.png"));
+      iflamme2 = ImageIO.read(cl.getResourceAsStream("flamme 1.2.png"));
       // Gegner
-      igegner1 = ImageIO.read(new File("rsc/gegner1.png"));
-      gifgegner = Toolkit.getDefaultToolkit().createImage("rsc/gegner.gif");
+      igegner1 = ImageIO.read(cl.getResourceAsStream("gegner1.png"));
+      gifgegner = Toolkit.getDefaultToolkit().createImage(cl.getResource("gegner.gif"));
       // Leben
-      iLeben = ImageIO.read(new File("rsc/leben.png"));
+      iLeben = ImageIO.read(cl.getResourceAsStream("leben.png"));
       // Schrott
-      ischrott1 = ImageIO.read(new File("rsc/schrott1.png"));
-      ischrott2 = ImageIO.read(new File("rsc/schrott2.png"));
-      ischrott3 = ImageIO.read(new File("rsc/schrott3.png"));
+      ischrott1 = ImageIO.read(cl.getResourceAsStream("schrott1.png"));
+      ischrott2 = ImageIO.read(cl.getResourceAsStream("schrott2.png"));
+      ischrott3 = ImageIO.read(cl.getResourceAsStream("schrott3.png"));
       // Explosion
-      gifexplosion = Toolkit.getDefaultToolkit().createImage("rsc/explosion.gif");
+      gifexplosion = Toolkit.getDefaultToolkit().createImage(cl.getResource("explosion.gif"));
 
       // Schild
       for (int i = 0; i < ischild.length; i++) {
-        ischild[i] = ImageIO.read(new File("rsc/schild" + (i + 1) + ".png"));
+        ischild[i] = ImageIO.read(cl.getResourceAsStream("schild" + (i + 1) + ".png"));
       }
 
       // Schuss
-      gifschuss = Toolkit.getDefaultToolkit().createImage("rsc/schuss.gif");
+      gifschuss = Toolkit.getDefaultToolkit().createImage(cl.getResource("schuss.gif"));
       // Munition
-      iammo = ImageIO.read(new File("rsc/ammo.png"));
+      iammo = ImageIO.read(cl.getResourceAsStream("ammo.png"));
     } catch (IOException e) {
       e.printStackTrace();
       System.out.println("Bilder konnten nicht geladen werden");
@@ -106,6 +107,6 @@ public class Var {
     schrottspeed2[0] = 4;
     schrottspeed2[1] = 5;
     schrottspeed3 = 6;
-    Music.music("audio/track1.wav");
+    Music.music(cl.getResource("track1.wav"));
   }
 }

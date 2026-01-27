@@ -132,17 +132,17 @@ public class Label extends JLabel {
       if (Var.imShop) {
         g.setColor(new Color(0, 230, 115));
         g.setFont(new Font("Arial", Font.BOLD, 35));
-        g.drawString("Schrott: " + Var.schrott, 310, 180);
-        g.drawString("Maxleben +1", 85, 340);
+        g.drawString("Schrott (S): " + Var.schrott, 310, 180);
+        g.drawString("+1 Maxleben", 85, 340);
         g.drawString("+10 Schuss", 100, 415);
         g.drawString("+1 Plasmaschild", 20, 485);
         g.drawString("Stufe " + Var.up1anzahl, 550, 340);
         g.drawString("Stufe " + Var.up2anzahl, 550, 415);
         g.drawString("Stufe " + Var.up3anzahl, 550, 485);
-        g.drawString(Var.up1preis + "s", 310, 340);
-        g.drawString(Var.up2preis + "s", 310, 415);
-        g.drawString(Var.up3preis + "s", 310, 485);
-        g.drawString(Var.uplebenpreis + "s", 700, 185);
+        g.drawString(Var.up1preis + " S", 310, 340);
+        g.drawString(Var.up2preis + " S", 310, 415);
+        g.drawString(Var.up3preis + " S", 310, 485);
+        g.drawString(Var.uplebenpreis + " S", 700, 185);
         g.drawString("+1 Leben", 525, 235);
         g.setColor(Color.BLACK);
         g.drawLine(50, 362, 750, 362);

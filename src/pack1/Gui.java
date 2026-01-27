@@ -22,7 +22,7 @@ public class Gui {
     Var.lbl1.setBounds(0, 0, Var.screenwidth, Var.screenheight);
     Var.lbl1.setVisible(true);
     Var.btnresume = new JButton();
-    Var.btnresume.setText("Resume");
+    Var.btnresume.setText("Fortsetzen");
     Var.btnresume.setBounds(30, 50, 725, 50);
     Var.btnresume.setVisible(false);
     Var.btnresume.addActionListener(new ActionHandler());
