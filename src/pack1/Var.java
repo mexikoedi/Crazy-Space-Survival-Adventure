@@ -91,7 +91,7 @@ public class Var {
       iammo = ImageIO.read(cl.getResourceAsStream("ammo.png"));
     } catch (IOException e) {
       e.printStackTrace();
-      System.out.println("Bilder konnten nicht geladen werden");
+      System.out.println("Bilder konnten nicht geladen werden!");
     }
 
     gegnerspeed[0] = 3;

@@ -28,7 +28,7 @@ public class Music {
                     clip.close();
                   } catch (Exception e) {
                     e.printStackTrace();
-                    System.out.println("Audio konnte nicht geladen werden");
+                    System.out.println("Audio konnte nicht geladen werden!");
                   }
                 }
               }
