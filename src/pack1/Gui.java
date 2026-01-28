@@ -91,7 +91,7 @@ public class Gui {
             Var.btnsteuerung.setForeground(Color.WHITE);
           }
         });
-    
+
     Var.jf1.add(Var.btnsteuerung);
     Var.btninfo = new JButton();
     Var.btninfo.setText("Info");
