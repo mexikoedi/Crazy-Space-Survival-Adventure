@@ -69,9 +69,33 @@ public class Gui {
         });
 
     Var.jf1.add(Var.btnshop);
+    Var.btnsteuerung = new JButton();
+    Var.btnsteuerung.setText("Steuerung");
+    Var.btnsteuerung.setBounds(30, 250, 725, 50);
+    Var.btnsteuerung.setVisible(false);
+    Var.btnsteuerung.addActionListener(new ActionHandler());
+    Var.btnsteuerung.setBackground(Color.BLACK);
+    Var.btnsteuerung.setFont(new Font("Arial", Font.BOLD, 40));
+    Var.btnsteuerung.setForeground(Color.WHITE);
+    Var.btnsteuerung.setBorder(null);
+    Var.btnsteuerung.setFocusPainted(false);
+    Var.btnsteuerung.addMouseListener(
+        new MouseAdapter() {
+          public void mouseEntered(MouseEvent evt) {
+            Var.btnsteuerung.setBackground(new Color(0, 230, 115));
+            Var.btnsteuerung.setForeground(Color.BLACK);
+          }
+
+          public void mouseExited(MouseEvent evt) {
+            Var.btnsteuerung.setBackground(Color.BLACK);
+            Var.btnsteuerung.setForeground(Color.WHITE);
+          }
+        });
+    
+    Var.jf1.add(Var.btnsteuerung);
     Var.btninfo = new JButton();
     Var.btninfo.setText("Info");
-    Var.btninfo.setBounds(30, 250, 725, 50);
+    Var.btninfo.setBounds(30, 350, 725, 50);
     Var.btninfo.setVisible(false);
     Var.btninfo.addActionListener(new ActionHandler());
     Var.btninfo.setBackground(Color.BLACK);
@@ -93,30 +117,6 @@ public class Gui {
         });
 
     Var.jf1.add(Var.btninfo);
-    Var.btnsteuerung = new JButton();
-    Var.btnsteuerung.setText("Steuerung");
-    Var.btnsteuerung.setBounds(30, 350, 725, 50);
-    Var.btnsteuerung.setVisible(false);
-    Var.btnsteuerung.addActionListener(new ActionHandler());
-    Var.btnsteuerung.setBackground(Color.BLACK);
-    Var.btnsteuerung.setFont(new Font("Arial", Font.BOLD, 40));
-    Var.btnsteuerung.setForeground(Color.WHITE);
-    Var.btnsteuerung.setBorder(null);
-    Var.btnsteuerung.setFocusPainted(false);
-    Var.btnsteuerung.addMouseListener(
-        new MouseAdapter() {
-          public void mouseEntered(MouseEvent evt) {
-            Var.btnsteuerung.setBackground(new Color(0, 230, 115));
-            Var.btnsteuerung.setForeground(Color.BLACK);
-          }
-
-          public void mouseExited(MouseEvent evt) {
-            Var.btnsteuerung.setBackground(Color.BLACK);
-            Var.btnsteuerung.setForeground(Color.WHITE);
-          }
-        });
-
-    Var.jf1.add(Var.btnsteuerung);
     Var.btnexit = new JButton();
     Var.btnexit.setText("Beenden");
     Var.btnexit.setBounds(30, 450, 725, 50);
